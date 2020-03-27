@@ -1,3 +1,11 @@
+# JournalFy
+
+![](public/img1.png)
+![](public/img2.png)
+![](public/img3.png)
+![](public/img4.png)
+
+
 ## Installation
 
 1. Clone repo
