@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>JournalFy</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Righteous|Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/077191d827.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+
+      <header class="logInHeader">
+        <h1>Journalfy</h1>
+        <section>
+          <a href="/profile" class="btn btn-default"><span class="fa fa-user"></span>Feed</a>
+          <a href="/myPosts" class="btn btn-default"><span class="fa fa-user"></span> My posts</a>
+          <a href="/logout" class="btn btn-default">Logout</a>
+        </section>
+      </header>
+
+      <div class="entry">
+        <h2>Write a new entry:</h2>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST">
+            <input class="hide" type="text" value="<%= user.local.email %>" name="name">
+            <input type="text" placeholder="title" name="title">
+            <input class="hide" type="text" value="♥" name="like">
+            <input type="date" name="date">
+            <textarea rows="15" type="text" name="msg"></textarea>
+            <button class="btn btn-default" type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+
+        <script src="main.js"></script>
+    </body>
+</html>

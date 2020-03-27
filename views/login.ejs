@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <title>JournalFy</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Righteous|Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="logInEjsBody">
+  <header class="logInHeader">
+    <h1>JournalFy</h1>
+    <section>
+      <a href="/login" class="btn btn-default">Login</a>
+      <a href="/signup" class="btn btn-default">Signup</a>
+    </section>
+  </header>
+  <div class="container logInPage">
+    <div class="col-sm-6 col-sm-offset-3">
+
+      <h1>Login</h1>
+
+      <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+      <% } %>
+
+    <!-- LOGIN FORM -->
+      <form action="/login" method="post">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-lg">Login</button>
+      </form>
+
+      <hr>
+
+      <p>Need an account? <a href="/signup">Signup</a></p>
+      <p>Or go <a href="/">home</a>.</p>
+
+
+    </div>
+  </div>
+  </body>
+</html>

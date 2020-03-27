@@ -1,0 +1,177 @@
+/* INDEX.EJS */
+
+.logInBody{
+
+}
+
+.logIn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logInHeader{
+  background-color: #52307c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logInHeader h1{
+  font-family: 'Righteous', cursive;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.logInHeader section{
+  margin-top: 1.5rem;
+  margin-right: 4rem;
+}
+
+.logInHeader a{
+  margin-right: 2rem;
+  background-color: #bca0dc;
+  font-family: 'Sen', sans-serif;
+  color: white;
+  border: none;
+}
+
+.homePageOne{
+  margin-left: 5rem;
+  margin-top: 10rem;
+  width: 50%;
+  float: left;
+}
+
+.homePageOne h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.homePageOne p{
+  font-size: 3rem;
+}
+
+.homePageTwo{
+  width: 35%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18rem;
+  font-size: 2rem;
+  line-height: 5rem;
+}
+
+/*LOGIN.EJS */
+
+.logInPage{
+  margin-top: 10rem;
+}
+
+.logInPage h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #52307c;
+}
+
+.logInPage button{
+  background-color: #52307c;
+  border: none;
+}
+
+.logInPage button:hover{
+  color: white;
+  background-color: #bca0dc;
+}
+
+/* SIGNUP.EJS */
+
+.signUpPage{
+  margin-top: 10rem;
+}
+
+.signUpPage h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #52307c;
+}
+
+.signUpPage button{
+  background-color: #52307c;
+  border: none;
+}
+
+.signUpPage button:hover{
+  color: white;
+  background-color: #bca0dc;
+}
+
+/* PROFILE.EJS + MYPOSTS.EJS */
+
+.feed{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feed h2{
+  font-size: 6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.post{
+  background-color: #bca0dc;
+  border-radius: 7px;
+  width: 40%;
+  color: white;
+  margin-top: 5rem;
+  text-align: center;
+  border: 5px solid #52307c;
+}
+
+.like{
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+/* WRITEPOST.EJS */
+
+.entry h2{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.entry form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entry input{
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.entry form textarea{
+  width: 40%;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  border-radius: 4px;
+}
+
+.entry button{
+  background-color: #52307c;
+  border: none;
+  color: white;
+}
+
+.entry button:hover{
+  color: white;
+  background-color: #bca0dc;
+}
