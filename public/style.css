@@ -35,6 +35,8 @@
   font-family: 'Sen', sans-serif;
   color: white;
   border: none;
+  margin-top: 2rem;
+  font-size: 1.7rem;
 }
 
 .homePageOne{
@@ -44,7 +46,7 @@
   float: left;
 }
 
-.homePageOne h1 {
+.homePageOne h1{
   font-family: 'Poppins', sans-serif;
   font-size: 6rem;
   font-weight: bold;
@@ -174,4 +176,13 @@
 .entry button:hover{
   color: white;
   background-color: #bca0dc;
+}
+
+#logo{
+  text-decoration: none;
+}
+
+.logoFy a{
+
+  text-decoration: none;
 }
